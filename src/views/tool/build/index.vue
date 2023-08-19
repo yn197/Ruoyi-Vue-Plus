@@ -146,7 +146,7 @@ import { beautifierConf, titleCase } from '@/utils/index'
 import { makeUpHtml, vueTemplate, vueScript, cssStyle } from '@/utils/generator/html'
 import { makeUpJs } from '@/utils/generator/js'
 import { makeUpCss } from '@/utils/generator/css'
-import drawingDefault from '@/utils/generator/drawingDefault'
+import drawingDefalut from '@/utils/generator/drawingDefalut'
 import logo from '@/assets/logo/logo.png'
 import CodeTypeDialog from './CodeTypeDialog'
 import DraggableItem from './DraggableItem'
@@ -171,15 +171,15 @@ export default {
       selectComponents,
       layoutComponents,
       labelWidth: 100,
-      drawingList: drawingDefault,
+      drawingList: drawingDefalut,
       drawingData: {},
-      activeId: drawingDefault[0].formId,
+      activeId: drawingDefalut[0].formId,
       drawerVisible: false,
       formData: {},
       dialogVisible: false,
       generateConf: null,
       showFileName: false,
-      activeData: drawingDefault[0]
+      activeData: drawingDefalut[0]
     }
   },
   created() {
@@ -371,6 +371,20 @@ export default {
 </script>
 
 <style lang='scss'>
+body, html{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+input, textarea{
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
 .editor-tabs{
   background: #121315;
   .el-tabs__header{
@@ -765,4 +779,5 @@ $lighterBlue: #409EFF;
     }
   }
 }
+
 </style>

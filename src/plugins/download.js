@@ -15,9 +15,9 @@ export default {
       url: url,
       responseType: 'blob',
       headers: { 'Authorization': 'Bearer ' + getToken() }
-    }).then((res) => {
-      const isBlob = blobValidate(res.data);
-      if (isBlob) {
+    }).then(async (res) => {
+      const isLogin = await blobValidate(res.data);
+      if (isLogin) {
         const blob = new Blob([res.data], { type: 'application/zip' })
         this.saveAs(blob, name)
       } else {

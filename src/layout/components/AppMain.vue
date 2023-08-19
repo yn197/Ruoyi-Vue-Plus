@@ -2,19 +2,15 @@
   <section class="app-main">
     <transition name="fade-transform" mode="out-in">
       <keep-alive :include="cachedViews">
-        <router-view v-if="!$route.meta.link" :key="key" />
+        <router-view :key="key" />
       </keep-alive>
     </transition>
-    <iframe-toggle />
   </section>
 </template>
 
 <script>
-import iframeToggle from "./IframeToggle/index"
-
 export default {
   name: 'AppMain',
-  components: { iframeToggle },
   computed: {
     cachedViews() {
       return this.$store.state.tagsView.cachedViews
@@ -35,7 +31,7 @@ export default {
   overflow: hidden;
 }
 
-.fixed-header + .app-main {
+.fixed-header+.app-main {
   padding-top: 50px;
 }
 
@@ -45,7 +41,7 @@ export default {
     min-height: calc(100vh - 84px);
   }
 
-  .fixed-header + .app-main {
+  .fixed-header+.app-main {
     padding-top: 84px;
   }
 }
@@ -55,21 +51,7 @@ export default {
 // fix css style bug in open el-dialog
 .el-popup-parent--hidden {
   .fixed-header {
-    padding-right: 6px;
+    padding-right: 17px;
   }
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0;
-  border-radius: 3px;
 }
 </style>

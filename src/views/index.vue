@@ -41,7 +41,7 @@
       <el-col :sm="24" :lg="12" style="padding-left: 20px">
         <h2>若依后台管理框架</h2>
         <p>
-          一直想做一款后台管理系统，看了很多优秀的开源项目但是发现没有合适自己的。于是利用空闲休息时间开始自己写一套后台系统。如此有了若依管理系统，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。所有前端后台代码封装过后十分精简易上手，出错概率低。同时支持移动客户端访问。系统会陆续更新一些实用功能。
+          一直想做一款后台管理系统，看了很多优秀的开源项目但是发现没有合适自己的。于是利用空闲休息时间开始自己写一套后台系统。如此有了若依管理系统。，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。所有前端后台代码封装过后十分精简易上手，出错概率低。同时支持移动客户端访问。系统会陆续更新一些实用功能。
         </p>
         <p>
           <b>当前版本:</b> <span>v{{ version }}</span>
@@ -119,11 +119,9 @@
             </p>
             <p>
               <i class="el-icon-user-solid"></i> QQ群：<s>满42799195</s>
-              <s>满170157040</s> <s>满130643120</s> <s>满225920371</s>
-              <s>满201705537</s> <s>满236543183</s> <s>满213618602</s>
-              <s>满148794840</s> <s>满118752664</s>
-              <a href="https://jq.qq.com/?_wv=1027&k=FqImHgH2" target="_blank"
-                >101038945</a
+              <s>满170157040</s> <s>满130643120</s> <s>满225920371</s> <s>满201705537</s>
+              <a href="https://jq.qq.com/?_wv=1027&k=qdT1Ojpz" target="_blank">
+                236543183</a
               >
             </p>
             <p>
@@ -148,203 +146,6 @@
             <span>更新日志</span>
           </div>
           <el-collapse accordion>
-            <el-collapse-item title="v3.6.2 - 2023-01-16">
-              <ol>
-                <li>重置时取消部门选中</li>
-                <li>新增返回警告消息提示</li>
-                <li>忽略不必要的属性数据返回</li>
-                <li>修改参数键名时移除前缓存配置</li>
-                <li>开启TopNav没有子菜单隐藏侧边栏</li>
-                <li>删除fuse无效选项maxPatternLength</li>
-                <li>兼容Excel下拉框内容过多无法显示的问题</li>
-                <li>修复文件上传组件格式验证问题</li>
-                <li>修复回显数据字典数组异常问题</li>
-                <li>修复sheet超出最大行数异常问题</li>
-                <li>修复Log注解GET请求记录不到参数问题</li>
-                <li>修复gateway流控规则生效但不显示问题</li>
-                <li>修复主题颜色在Drawer组件不会加载问题</li>
-                <li>修复调度日志点击多次数据不变化的问题</li>
-                <li>修复用户编辑时角色和部门存在无法修改情况</li>
-                <li>修复使用透明底png图片时，自动填充黑色背景</li>
-                <li>修复table中更多按钮切换主题色未生效修复问题</li>
-                <li>修复某些特性的环境生成代码变乱码TXT文件问题</li>
-                <li>修复代码生成图片/文件/单选时选择必填无法校验问题</li>
-                <li>升级spring-cloud到最新版2021.0.5</li>
-                <li>升级spring-boot到最新版本2.7.7</li>
-                <li>升级spring-boot-admin到最新版2.7.10</li>
-                <li>升级kaptcha到最新版2.3.3</li>
-                <li>升级druid到最新版本1.2.15</li>
-                <li>升级fastjson到最新版2.0.22</li>
-                <li>升级pagehelper到最新版1.4.6</li>
-                <li>升级transmittable-thread-local到最新版本2.14.2</li>
-                <li>升级echarts到最新版本5.4.0</li>
-                <li>升级core-js到最新版本3.25.3</li>
-                <li>升级element-ui到最新版本2.15.12</li>
-				<li>移除commons-collections多余的依赖</li>
-                <li>优化弹窗内容过多展示不全问题</li>
-                <li>优化导出对象的子列表为空会出现[]问题</li>
-                <li>优化字符未使用下划线不进行驼峰式处理</li>
-                <li>优化nacos修改xss开关时同步过滤器验证</li>
-                <li>优化修改头像在小屏幕上页面布局错位的问题</li>
-                <li>其他细节优化</li>
-              </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.6.1 - 2022-10-01">
-              <ol>
-                <li>数据逻辑删除不进行唯一验证</li>
-                <li>支持多权限字符匹配角色数据权限</li>
-                <li>页面内嵌iframe切换tab不刷新数据</li>
-                <li>新增密码最大错误次数/锁定时间</li>
-                <li>登录日志新增解锁账户功能</li>
-                <li>通用下载方法新增config配置选项</li>
-                <li>操作日志记录支持排除敏感属性字段</li>
-                <li>Excel注解支持导出对象的子列表方法</li>
-                <li>Excel注解支持自定义隐藏属性列</li>
-                <li>Excel注解支持backgroundColor属性设置背景色</li>
-                <li>升级spring-cloud-alibaba到最新版2021.0.4.0</li>
-                <li>升级spring-cloud到最新版2021.0.4</li>
-                <li>升级spring-boot到最新版本2.7.3</li>
-                <li>升级spring-boot-admin到最新版2.7.5</li>
-                <li>升级seata到最新版1.5.2</li>
-                <li>升级druid到最新版本1.2.12</li>
-                <li>升级fastjson到最新版2.0.14</li>
-                <li>升级pagehelper到最新版1.4.5</li>
-                <li>升级core-js到最新版本3.25.2</li>
-                <li>升级dynamic-ds到最新版本3.5.2</li>
-                <li>升级element-ui到最新版本2.15.10</li>
-                <li>修复多文件上传报错出现的异常问题</li>
-                <li>修复图片预览组件src属性为null值控制台报错问题</li>
-                <li>修复使用FastDFS上传头像失败提示文件名没有后缀问题</li>
-                <li>优化seata单独依赖模块</li>
-                <li>优化任务过期不执行调度</li>
-                <li>优化字典数据使用store存取</li>
-                <li>优化代码生成同步后值NULL问题</li>
-                <li>优化定时任务支持执行父类方法</li>
-                <li>优化修改资料头像被覆盖的问题</li>
-                <li>优化修改用户登录账号重复验证</li>
-                <li>优化用户个人信息接口防止修改部门</li>
-                <li>优化布局设置使用el-drawer抽屉显示</li>
-                <li>优化日志注解记录限制请求地址的长度</li>
-                <li>优化导入更新用户数据前校验数据权限</li>
-                <li>优化excel/scale属性导出单元格数值类型</li>
-                <li>优化日志操作中重置按钮时重复查询的问题</li>
-                <li>优化多个相同角色数据导致权限SQL重复问题</li>
-                <li>优化表格上右侧工具条（搜索按钮显隐&右侧样式凸出）</li>
-                <li>其他细节优化</li>
-              </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.6.0 - 2022-07-16">
-              <ol>
-                <li>Excel注解支持color字体颜色</li>
-                <li>用户头像上传限制只能为图片格式</li>
-                <li>检查定时任务bean所在包名是否为白名单配置</li>
-                <li>字典类型必须以字母开头，且只能为（小写字母，数字，下滑线）</li>
-                <li>升级spring-cloud-alibaba到最新版2021.0.1.0</li>
-                <li>升级spring-cloud到最新版2021.0.3</li>
-                <li>升级spring-boot到最新版本2.7.1</li>
-                <li>升级spring-boot-admin到最新版2.7.2</li>
-                <li>升级seata到最新版1.5.1</li>
-                <li>升级pagehelper到最新版1.4.3</li>
-                <li>升级dynamic-ds到最新版本3.5.1</li>
-                <li>升级fastjson到最新版2.0.9</li>
-                <li>升级druid到最新版本1.2.11</li>
-                <li>升级transmittable-thread-local到最新版本2.13.2</li>
-                <li>升级element-ui到最新版本2.15.9</li>
-                <li>修复字典数据显示不全问题</li>
-                <li>修复操作日志查询类型条件为0时会查到所有数据</li>
-                <li>优化验证码开关变量名</li>
-                <li>优化设置分页参数默认值</li>
-                <li>优化对空字符串参数处理的过滤</li>
-                <li>优化Maven使用阿里云镜像站加速</li>
-                <li>优化用户列表查询不显示密码字段</li>
-                <li>优化表单构建按钮不显示正则校验</li>
-                <li>优化字典类型删除多余的mapper注解</li>
-                <li>优化字典数据回显样式下拉框显示值</li>
-                <li>优化用户管理左侧树型组件增加选中高亮保持</li>
-                <li>优化新增用户与角色信息&用户与岗位信息逻辑</li>
-                <li>优化数据监控Spring Security权限认证过时代码</li>
-                <li>优化岗位长主键溢出问题将查询返回类型改为Long</li>
-                <li>优化删除无用admin-client依赖声明，避免造成误解</li>
-                <li>优化默认不启用压缩文件缓存防止node_modules过大</li>
-                <li>优化获取body请求数据缓存过滤器CacheRequestFilter</li>
-                <li>优化网关通过注解解决循环引用及Bean重复问题删除allow配置</li>
-                <li>其他细节优化</li>
-              </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.5.0 - 2022-04-11">
-              <ol>
-                <li>开启TopNav没有子菜单情况隐藏侧边栏</li>
-                <li>侧边栏菜单名称过长悬停显示标题</li>
-                <li>用户访问控制时校验数据权限，防止越权</li>
-                <li>导出Excel时屏蔽公式，防止CSV注入风险</li>
-                <li>组件ImageUpload支持多图同时选择上传</li>
-                <li>组件FileUpload支持多文件同时选择上传</li>
-                <li>代码生成树表新增(展开/折叠)</li>
-                <li>代码生成子表支持日期/字典配置</li>
-                <li>代码生成编辑修改打开新页签</li>
-                <li>添加页签openPage支持传递参数</li>
-                <li>添加清理分页的线程变量方法</li>
-                <li>修改npm即将过期的注册源地址</li>
-                <li>用户缓存信息添加部门ancestors祖级列表</li>
-                <li>升级spring-cloud到最新版2021.0.1</li>
-                <li>升级spring-boot到最新版本2.6.6</li>
-                <li>升级spring-boot-admin到最新版2.6.6</li>
-                <li>升级spring-boot-mybatis到最新版2.2.2</li>
-                <li>降级jsencrypt版本兼容IE浏览器</li>
-                <li>修复分页组件请求两次问题</li>
-                <li>修复表单清除元素位置未垂直居中问题</li>
-                <li>修复Excel注解prompt/combo同时使用不生效问题</li>
-                <li>修复导入Excel时字典字段类型为Long转义为空问题</li>
-                <li>修复登录超时刷新页面跳转登录页面还提示重新登录问题</li>
-                <li>修复Xss注解字段值为空时的异常问题</li>
-                <li>优化IP地址获取到多个的问题</li>
-                <li>优化文件上传兼容Weblogic环境</li>
-                <li>代码生成同步保留必填/类型选项</li>
-                <li>优化Excel格式化不同类型的日期对象</li>
-                <li>优化菜单表关键字导致的插件报错问题</li>
-                <li>优化Oracle用户头像列为空时不显示问题</li>
-                <li>优化页面若未匹配到字典标签则返回原字典值</li>
-                <li>优化修复登录失效后多次请求提示多次弹窗问题</li>
-                <li>其他细节优化</li>
-              </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.4.0 - 2022-01-24">
-              <ol>
-                <li>新增Vue3前端代码生成模板</li>
-                <li>新增图片预览组件</li>
-                <li>新增压缩插件实现打包Gzip</li>
-                <li>新增docker一键复制的脚本</li>
-                <li>自定义xss校验注解实现</li>
-                <li>路由支持单独配置菜单或角色权限</li>
-                <li>前端支持设置是否需要防止数据重复提交</li>
-                <li>预览组件支持多图显示</li>
-                <li>代码生成列表图片支持预览</li>
-                <li>代码生成新增Java类型Boolean</li>
-                <li>定时任务目标字符串过滤特殊字符</li>
-                <li>定时任务目标字符串验证包名白名单</li>
-				<li>升级nacos到最新版2.0.4</li>
-                <li>升级spring-cloud到最新版2021.0.0</li>
-                <li>升级spring-boot到最新版本2.6.3</li>
-                <li>升级spring-boot-admin到最新版2.6.1</li>
-                <li>升级pagehelper到最新版1.4.1</li>
-                <li>升级fastjson到最新版1.2.79</li>
-                <li>SQL工具类新增检查关键字方法</li>
-                <li>修复打包后字体图标偶现的乱码问题</li>
-                <li>修复版本差异导致的懒加载报错问题</li>
-                <li>修复选项卡点击右键刷新丢失参数问题</li>
-                <li>修复登录失效后多次请求提示多次弹窗问题</li>
-                <li>优化加载字典缓存数据</li>
-                <li>优化代码生成同步更新字段</li>
-                <li>优化代码生成字典组重复问题</li>
-                <li>优化空值不进行回显数据字典</li>
-                <li>优化用户导入提示溢出则显示滚动条</li>
-                <li>优化定时任务cron表达式小时设置24</li>
-                <li>优化部门修改缩放后出现的错位问题</li>
-                <li>优化分页方法设置成通用方便灵活调用</li>
-                <li>优化用户管理部门查询选择节点后分页参数初始</li>
-                <li>其他细节优化</li>
-              </ol>
-            </el-collapse-item>
             <el-collapse-item title="v3.3.0 - 2021-12-13">
               <ol>
                 <li>新增配套并同步的Vue3前端版本</li>
@@ -834,13 +635,14 @@
     </el-row>
   </div>
 </template>
+
 <script>
 export default {
   name: "Index",
   data() {
     return {
       // 版本号
-      version: "3.6.2",
+      version: "3.3.0",
     };
   },
   methods: {
